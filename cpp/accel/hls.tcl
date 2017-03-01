@@ -4,7 +4,7 @@
 
 set top "top"
 set cflags "-DHLS_COMPILE -O3 -std=c++0x -I../utils"
-set tbflags "-DHLS_COMPILE -O3 -std=c++0x -I../utils -lminizip -laes -lz"
+set tbflags "-DHLS_COMPILE -O3 -std=c++0x -I../utils -lCraftUtils -lminizip -laes -lz"
 set utils "../utils/Common.cpp ../utils/DataIO.cpp ../utils/ParamIO.cpp ../utils/ZipIO.cpp"
 
 open_project hls.prj

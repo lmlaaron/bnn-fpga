@@ -13,10 +13,10 @@ all: $(EXE)
 
 # Rule for object files, each object must have a header
 $(OBJ): %.o: %.cpp %.h
-	$(CXX) -c $< -o $@ $(CFLAGS)
+	$(CC) -c $< -o $@ $(CFLAGS)
 
 %.o: %.cpp
-	$(CXX) -c $< -o $@ $(CFLAGS)
+	$(CC) -c $< -o $@ $(CFLAGS)
 
 # Rule for executables
 $(EXE): %.exe: %.o $(OBJ)
